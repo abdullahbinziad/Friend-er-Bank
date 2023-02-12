@@ -28,15 +28,15 @@
       <div class="grid grid-cols-3 p-7 gap-3 text-white">
         <div class="bg-emerald-400 p-8 rounded-md">
           <h3 class="text-4xl py-2">Deposit</h3>
-          <h1 class="text-3xl">$890</h1>
+          <h1 class="text-3xl">$ <span id="total-deposit-money">00</span></h1>
         </div>
         <div class="bg-fuchsia-400 p-8 rounded-md">
           <h3 class="text-4xl py-2">Widthraw</h3>
-          <h1 class="text-3xl">$688</h1>
+          <h1 class="text-3xl">$<span id="total-widthraw-money">00</span></h1>
         </div>
         <div class="bg-rose-400 p-8 rounded-md">
           <h3 class="text-4xl py-2">Balance</h3>
-          <h1 class="text-3xl">$678</h1>
+          <h1 class="text-3xl">$<span id="total-main-balance">00</span></h1>
         </div>
       </div>
     </section>
@@ -44,12 +44,12 @@
       <div class="grid grid-cols-2 gap-6 text-white p-7">
         <div class="bg-green-400 p-8 rounded-md flex flex-col">
             <h3 class="text-xl py-2">Please Deposit</h3>
-            <input
+            <input id="deposit-input"
               class="py-3 px-3 rounded-md my-2 text-slate-600"
               type="text"
               placeholder="Input The Amount You want to Deposit "
             />
-            <button
+            <button id="depositBtn"
               class="w-32 bg-red-100 py-3 rounded-md my-2 text-neutral-600 font-semibold text-lg"
             >
               Deposit
@@ -58,11 +58,12 @@
         <div class="bg-fuchsia-400 p-8 rounded-md flex flex-col">
           <h3 class="text-xl py-2">Please Withdraw</h3>
           <input
+          id="widthdraw-input"
             class="py-3 px-3 rounded-md my-2 text-slate-600"
             type="text"
             placeholder="Input The Amount You want to Widthdraw "
           />
-          <button
+          <button id="widthdrawBtn"
             class="w-32 bg-red-100 py-3 rounded-md my-2 text-neutral-600 font-semibold text-lg"
           >
             widthdraw
@@ -70,5 +71,8 @@
         </div>
       </div>
     </section>
+
+
+    <script src="./index.js"></script>
   </body>
 </html>
