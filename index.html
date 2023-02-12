@@ -1,24 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
-        }
-      </script>
-</head>
-<body>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
     <!--  -->
-</body>
+
+    <section class="w-3/4 mx-auto pt-7">
+      <h1 class="text-5xl text-center font-semibold">
+        Let's get some <span class="text-pink-600">Moooooooney!!!</span>
+      </h1>
+      <div class="grid grid-cols-3 p-7 gap-3 text-white">
+        <div class="bg-emerald-400 p-8 rounded-md">
+          <h3 class="text-4xl py-2">Deposit</h3>
+          <h1 class="text-3xl">$890</h1>
+        </div>
+        <div class="bg-fuchsia-400 p-8 rounded-md">
+          <h3 class="text-4xl py-2">Widthraw</h3>
+          <h1 class="text-3xl">$688</h1>
+        </div>
+        <div class="bg-rose-400 p-8 rounded-md">
+          <h3 class="text-4xl py-2">Balance</h3>
+          <h1 class="text-3xl">$678</h1>
+        </div>
+      </div>
+    </section>
+    <section class="w-3/4 mx-auto">
+      <div class="grid grid-cols-2 gap-6 text-white p-7">
+        <div class="bg-green-400 p-8 rounded-md flex flex-col">
+            <h3 class="text-xl py-2">Please Deposit</h3>
+            <input
+              class="py-3 px-3 rounded-md my-2 text-slate-600"
+              type="text"
+              placeholder="Input The Amount You want to Deposit "
+            />
+            <button
+              class="w-32 bg-red-100 py-3 rounded-md my-2 text-neutral-600 font-semibold text-lg"
+            >
+              Deposit
+            </button>
+          </div>
+        <div class="bg-fuchsia-400 p-8 rounded-md flex flex-col">
+          <h3 class="text-xl py-2">Please Withdraw</h3>
+          <input
+            class="py-3 px-3 rounded-md my-2 text-slate-600"
+            type="text"
+            placeholder="Input The Amount You want to Widthdraw "
+          />
+          <button
+            class="w-32 bg-red-100 py-3 rounded-md my-2 text-neutral-600 font-semibold text-lg"
+          >
+            widthdraw
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
